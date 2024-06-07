@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Recruitment and Product Showcase - BlueTopia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #0066cc;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #005bb5;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #007bff;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            width: calc(33% - 20px);
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            position: relative; /* Add position relative for image overlay */
+        }
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+        .product-item a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .product-item a:hover {
+            text-decoration: underline;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1; /* Set higher z-index to display image above overlay */
+        }
+        .product-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s;
+            z-index: 2; /* Set overlay above image */
+        }
+        .product-item:hover .overlay {
+            opacity: 1; /* Show overlay on hover */
+        }
+        .product-item .overlay-content {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BlueTopia Influencer Recruitment and Product Showcase</h1>
+    </header>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Welcome to BlueTopia</h2>
+            <p>We are dedicated to recruiting outstanding influencers and showcasing the latest high-quality products. Join us to create a bright future together.</p>
+        </section>
+        <section id="recruitment" class="section">
+            <h2>Influencer Recruitment</h2>
+            <p>We are looking for influential individuals to promote our products. If you have the following qualities, please contact us:</p>
+            <ul>
+                <li>Love sharing and positivity</li>
+                <li>Have a significant social media following</li>
+                <li>Unique insights into fashion, technology, or lifestyle</li>
+            </ul>
+        </section>
+        <section id="products" class="section">
+            <h2>Product Showcase</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="https://shop.tiktok.com/view/product/1729470739887920065?region=US&locale=en" target="_blank">
+                        <img src="C:\Users\jackson.wang.NDPMEDIA\Desktop\8\p1.jpeg" alt="Product 1">
+                        <div class="overlay">
+                            <div class="overlay-content">Product 1 Description</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="https://www.tiktok.com/view/product/1729421192885998127" target="_blank">
+                        <img src="C:\Users\jackson.wang.NDPMEDIA\Desktop\8\p2.jpeg" alt="Product 2">
+                        <div class="overlay">
+                            <div class="overlay-content">Product 2 Description</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="https://www.tiktok.com/view/product/1729417241585881647" target="_blank">
+                        <img src="C:\Users\jackson.wang.NDPMEDIA\Desktop\8\p3.jpeg" alt="Product 3">
+                        <div class="overlay">
+                            <div class="overlay-content">Product 3 Description</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="https://www.tiktok.com/view/product/1729421898102968879" target="_blank">
+                        <img src="C:\Users\jackson.wang.NDPMEDIA\Desktop\8\p4.jpeg" alt="Product 4">
+                        <div class="overlay">
+                            <div class="overlay-content">Product 4 Description</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="https://www.tiktok.com/view/product/1729460916012421679" target="_blank">
+                        <img src="C:\Users\jackson.wang.NDPMEDIA\Desktop\8\p5.jpeg" alt="Product 5">
+                        <div class="overlay">
+                            <div class="overlay-content">Product 5 Description</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="https://www.tiktok.com/t/ZPRwMbWVA/" target="_blank">
+                        <img src="C:\Users\jackson.wang.NDPMEDIA\Desktop\8\p6.jpeg" alt="Product 6">
+                        <div class="overlay">
+                            <div class="overlay-content">Product 6 Description</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="https://www.tiktok.com/view/product/1729483742575825455" target="_blank">
+                        <img src="C:\Users\jackson.wang.NDPMEDIA\Desktop\8\p7.jpeg" alt="Product 7">
+                        <div class="overlay">
+                            <div class="overlay-content">Product 7 Description</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item">
+                    <a href="https://shop.tiktok.com/view/product/1729490631132418607" target="_blank">
+                        <img src="C:\Users\jackson.wang.NDPMEDIA\Desktop\8\p8.jpeg" alt="Product 8">
+                        <div class="overlay">
+                            <div class="overlay-content">Product 8 Description</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="cooperation" class="section">
+            <h2>How to Confirm Cooperation with Us</h2>
+            <p>If you are interested in our products, please give us a positive reply first and follow the steps below:</p>
+            <ol>
+                <li><strong>Step 1: Discover free product samples in the product market or through the Target invite page</strong>
+                    <p>After finding the product you want to promote in the product market or the Target invite page, you can check if there is a free sample offer by checking the product details page. If so, the "Request Free Sample" button will be displayed. Note: After applying for a free sample, the product will appear in your showcase. Once your free sample is approved, this will make it easy to promote the product.</p>
+                    <ul>
+                        <li>Request a free sample from the product market:</li>
+                        <li>Request a free sample from the Target invite page:</li>
+                    </ul>
+                </li>
+                <li><strong>Step 2: Request a free sample</strong>
+                    <p>After clicking "Request Free Sample", fill in the information required to receive the sample, including size, contact details and shipping information.</p>
+                    <p><strong>Notes:</strong></p>
+                    <ul>
+                        <li><strong>Withdrawal Request:</strong> After submitting a free sample request, you can cancel or withdraw the request before the seller processes and ships the sample. You can withdraw the request by clicking the "Withdraw Request" button on the "Request Details" page.</li>
+                        <li><strong>Number of free samples:</strong> If your monthly GMV is less than $5,000, the number of free sample requests that are being reviewed, waiting for shipment, and pending cannot exceed five (5) at any given time. If your monthly GMV is between $5,000 and $150,000, you can request up to 20 free samples at any given time. If your monthly GMV exceeds $150,000, you can request up to 50 free samples at any given time.</li>
+                    </ul>
+                </li>
+                <li><strong>Step 3: Track the status of your free sample request</strong>
+                    <p>Track the status of your free sample request on the "Request Details" page, where you can view the status of each request, shipping time, and any promotional content creation status. Note: If you have other questions about the status of your free sample, you can contact the seller through the notification center or inbox.</p>
+                </li>
+            </ol>
+            <div class="image-container">
+                <img src="C:\Users\jackson.wang.NDPMEDIA\Desktop\8\990.jpg" alt="How to request free sample steps">
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or are interested in joining, please send an email to: <a href="mailto:jackson@bluetopia.shop">jackson@bluetopia.shop</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 BlueTopia. All rights reserved.</p>
+    </footer>
+</body>
+</html>
